@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WHATIN - GL BAJAJ MATHURA Previous Year Papers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=Pacifico&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+    }
+
+    header {
+      padding: 1.5rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-bottom: 2px solid #00e5ff;
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .logo-title img {
+      height: 50px;
+    }
+
+    .logo-title h1 {
+      font-size: 2.3rem;
+      font-weight: 700;
+      color: #00e5ff;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav button {
+      background: transparent;
+      border: 2px solid #00e5ff;
+      color: #00e5ff;
+      font-weight: bold;
+      padding: 0.5rem 1.2rem;
+      margin: 0 0.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    nav button:hover {
+      background: #00e5ff;
+      color: #0f2027;
+    }
+
+    main, .about-section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .intro {
+      margin-bottom: 1.5rem;
+      font-size: 1.15rem;
+      color: #d0eaff;
+    }
+
+    .branch-heading {
+      font-size: 1.7rem;
+      font-weight: bold;
+      margin-bottom: 1.2rem;
+      color: #00e5ff;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .btn-group button {
+      padding: 1rem 2rem;
+      background: #00e5ff;
+      color: #0f2027;
+      font-weight: bold;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .btn-group button:hover {
+      background: #00bcd4;
+    }
+
+    .year-section {
+      display: none;
+    }
+
+    .year-section.active {
+      display: block;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .year-section h3 {
+      color: #0ae6de;
+      font-size: 1.8rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .subject-item {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.05rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease, background 0.3s ease;
+    }
+
+    .subject-item:hover {
+      transform: translateY(-2px);
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .subject-item a {
+      color: #00e5ff;
+      text-decoration: none;
+      padding: 0.4rem 0.8rem;
+      background: rgba(0, 229, 255, 0.2);
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+
+    .subject-item a:hover {
+      background: rgba(0, 229, 255, 0.35);
+    }
+
+    .about-section {
+      display: none;
+    }
+
+    .about-section.active {
+      display: block;
+    }
+
+    .about-section h2 {
+      font-size: 2rem;
+      color: #00e5ff;
+      margin-bottom: 1rem;
+    }
+
+    .about-section p {
+      font-size: 1.1rem;
+      color: #e0e0e0;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: rgba(255, 255, 255, 0.05);
+      color: #ccc;
+    }
+
+    .fixed-name {
+      position: fixed;
+      bottom: 10px;
+      left: 15px;
+      font-family: 'Pacifico', cursive;
+      font-size: 1.3rem;
+      color: #00e5ff;
+      opacity: 0.9;
+      z-index: 9999;
+      pointer-events: none;
+      user-select: none;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    }
+
+    @media (max-width: 768px) {
+      .logo-title h1 {
+        font-size: 1.6rem;
+      }
+      .btn-group {
+        flex-direction: column;
+        align-items: center;
+      }
+      .fixed-name {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-title">
+        <img src="whatinlogo.png" alt="WHATIN Logo">
+        <h1>WHATIN - GL BAJAJ MATHURA Previous Year Papers</h1>
+      </div>
+      <nav>
+        <button onclick="showHome()">Home</button>
+        <button onclick="showAbout()">About</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <p class="intro">Welcome to the official CSE Previous Year Paper archive for AKTU. Select your year to view available subjects with downloadable PDFs.</p>
+    <div class="branch-heading">Branch: Computer Science & Engineering (CSE)</div>
+
+    <div class="btn-group">
+      <button data-target="year1">1st Year</button>
+      <button data-target="year2">2nd Year</button>
+      <button data-target="year3">3rd Year</button>
+      <button data-target="year4">Final Year</button>
+    </div>
+
+    <section class="year-section" id="year1">
+      <h3>1st Year</h3>
+      <div class="subject-item"><span>Mathematics-2</span><a href="https://drive.google.com/file/d/11KRsxsD0UBaAq7XP3vqu6zo22W2RSDPN/view?usp=sharing" target="_blank">View PDF</a></div>
+      <div class="subject-item"><span>Mathematics-1</span><a href="https://drive.google.com/file/d/1fdBlGJ8wczW0umcz_W9WtG70H2ruivoL/view?usp=sharing" target="_blank">View PDF</a></div>
+      <div class="subject-item"><span>Physics</span><a href="https://drive.google.com/file/d/1WoMFOCdvty56YzhBZCj0nGCAIknu-f_T/view?usp=sharing" target="_blank">View PDF</a></div>
+      <div class="subject-item"><span>Basic Electrical</span><a href="https://drive.google.com/file/d/1z5clUb9HibrIx8klLVD77y7JYByqd0gq/view?usp=sharing" target="_blank">View PDF</a></div>
+      <div class="subject-item"><span>Chemistry</span><a href="https://drive.google.com/file/d/1qW_86evRW8KLf7b1Biep_c0GXbqCAzDW/view?usp=sharing" target="_blank">View PDF</a></div>
+      <div class="subject-item"><span>Soft Skills</span><a href="https://drive.google.com/file/d/16SeX0fOhSY-Ss-nzvPKT4x-3ZeAI-1-a/view?usp=sharing" target="_blank">View PDF</a></div>
+      <div class="subject-item"><span>EVS</span><a href="https://drive.google.com/file/d/1EHU5vcct_SsDsimsjTfCkYnMavRrdHaH/view?usp=sharing" target="_blank">View PDF</a></div>
+      <div class="subject-item"><span>PPS</span><a href="https://drive.google.com/file/d/1__LllZhleePu2j_cGZz_12SMDMNTqiKz/view?usp=sharing" target="_blank">View PDF</a></div>
+      <div class="subject-item"><span>Mechanical</span><a href="https://drive.google.com/file/d/1dBYq4WWRVGxwS9cAGe0KmvJwP4dKWBG5/view?usp=sharing" target="_blank">View PDF</a></div>
+      <div class="subject-item"><span>Electronics</span><a href="https://drive.google.com/file/d/1aVnmFA567k9KJJtFBPSm0KLs7JqBtIDx/view?usp=sharing" target="_blank">View PDF</a></div>
+    </section>
+
+   <section class="year-section" id="year2">
+  <h3>2nd Year</h3>
+  <H5>COMMING SOON 🗿</H5>
+  
+  <div class="subject-item"><span>Electronic Devices</span><a href="https://raw.githubusercontent.com/crazy-develop/phadai/main/Electronic%20Devices.pdf" target="_blank">View PDF</a></div>
+  <div class="subject-item"><span>Digital System Design</span><a href="https://raw.githubusercontent.com/crazy-develop/phadai/main/Digital%20System%20Design.pdf" target="_blank">View PDF</a></div>
+  <div class="subject-item"><span>Network Analysis and Synthesis</span><a href="https://raw.githubusercontent.com/crazy-develop/phadai/main/Network%20Analysis%20and%20Synthesis.pdf" target="_blank">View PDF</a></div>
+  <div class="subject-item"><span>Mathematics-IV</span><a href="https://raw.githubusercontent.com/crazy-develop/phadai/main/Mathematics-IV.pdf" target="_blank">View PDF</a></div>
+  <div class="subject-item"><span>Universal Human </span><a href="https://raw.githubusercontent.com/crazy-develop/phadai/main/Universal%20Human%20Values%20and%20Professional%20Ethics.pdf" target="_blank">View PDF</a></div>
+  <div class="subject-item"><span>Technical Communication</span><a href="https://raw.githubusercontent.com/crazy-develop/phadai/main/Technical%20Communication.pdf" target="_blank">View PDF</a></div>
+  <div class="subject-item"><span>Cyber Security</span><a href="https://raw.githubusercontent.com/crazy-develop/phadai/main/Cyber%20Security.pdf" target="_blank">View PDF</a></div>
+  <div class="subject-item"><span>Python Programming</span><a href="https://raw.githubusercontent.com/crazy-develop/phadai/main/Python%20Programming.pdf" target="_blank">View PDF</a></div>
+
+</section>
+
+    <section class="year-section" id="year3"><h3>3rd Year</h3></section>
+    <section class="year-section" id="year4"><h3>Final Year</h3></section>
+  </main>
+
+  <section class="about-section" id="about">
+    <h2>About WHATIN</h2>
+    <p>WHATIN stands for "We Hack Amazing Tech Ideas for Nextgen". It's a student-driven initiative to provide smart platforms and real academic resources for AKTU students and more.</p>
+    <p>All content here is free, curated with dedication by students, for students.</p>
+    <p>I'm truly grateful to you,<strong >Tarun yadav</strong>, for providing me with the previous year question papers. Your support is highly appreciated. Thank you!</p>
+    <p><strong>Founder:</strong> Dushyant Saini</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 WHATIN. All rights reserved.<br>
+    <span style="font-size: 0.85rem; color: #00e5ff;">Designed & Crafted by Dushyant Saini</span>
+    </p>
+  </footer>
+
+  <div class="fixed-name">WHATIN</div>
+
+  <script>
+    const buttons = document.querySelectorAll(".btn-group button");
+    const yearSections = document.querySelectorAll(".year-section");
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        yearSections.forEach(section => section.classList.remove("active"));
+        const target = btn.getAttribute("data-target");
+        document.getElementById(target).classList.add("active");
+      });
+    });
+
+    function showHome() {
+      document.getElementById("main-content").style.display = "block";
+      document.getElementById("about").classList.remove("active");
+    }
+
+    function showAbout() {
+      document.getElementById("main-content").style.display = "none";
+      document.getElementById("about").classList.add("active");
+    }
+
+    document.getElementById("year1").classList.add("active");
+  </script>
+</body>
+</html>
