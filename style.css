@@ -5,6 +5,43 @@
       box-sizing: border-box;
       font-family: 'Outfit', sans-serif;
     }
+ .contributor {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.img-box {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  border: 3px solid #00e5ff;
+  border-radius: 12px; /* square with rounded corners */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills the square */
+}
+
+.contributor h3 {
+  margin-top: 0.8rem;
+  font-size: 1.3rem;
+  color: #00e5ff;
+}
+
+.contribution {
+  font-size: 1rem;
+  color: #e0e0e0;
+  margin-top: 0.5rem;
+}
+
 
     body {
       background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
